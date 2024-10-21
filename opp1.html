@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Treningsøkt-tabell</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        table{
+            margin: 0 auto;
+            border-collapse: collapse;
+            width: 80%;
+            max-width: 800%;
+        }
+
+        th, td{
+            border: 1px solid black;
+            padding: 10px 20px;
+            text-align: left;
+            color: #333333;
+        }
+        th{
+            background-color: #f0f0f0;
+        }
+        tr:hover{
+            background-color: #e0e0e0;
+        }
+
+        tfoot tr {
+        background-color: #f0f0f0;
+        font-weight: bold;
+        }
+        tfoot tr td {
+            padding: 10px 20px;
+            border: none;
+        }
+
+        @media screen and (max-width: 780px) {
+            table {
+                width: 100%;
+            }
+            th, td {
+                padding: 5px 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th>Treningsdato</th>
+                <th>Type økt</th>
+                <th>Varighet (min)</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>01.12.24</td>
+                <td>Løping</td>
+                <td>30</td>
+            </tr>
+            <tr>
+                <td>03.12.24</td>
+                <td>Styrke</td>
+                <td>45</td>
+            </tr>
+            <tr>
+                <td>05.12.24</td>
+                <td>Løping</td>
+                <td>30</td>
+            </tr>
+            
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="3">Totalt antall minutter trent i desember: <span id="total-minutter">105</span></td>
+            </tr>
+        </tfoot>
+    </table>
+
+    
+</body>
+</html>
